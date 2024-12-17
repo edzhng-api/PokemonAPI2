@@ -8,11 +8,21 @@
 import Foundation
 
 struct FetchData {
+    var response: Response = Response()
+    
     mutating func getData() async {
-        var URLString = "https://newsapi.org/v2/everything?q=roblox&language=en&sortBy=publishedAt&apiKey=91d509dcf2e34ebd96eb0525be6751bd"
+        let URLString = "https://pokeapi.co/api/v2/pokemon/pikachu"
         
         guard let url = URL(string: URLString) else {return}
         guard let (data, _) = try? await URLSession.shared.data(from: url) else {return}
+        
+        guard let r = try? JSONDecoder().decode(Response.self, from: data) else {return}
+        
+        response = r
+    }
+    
+    struct Response: Codable {
+        
         
     }
 }
