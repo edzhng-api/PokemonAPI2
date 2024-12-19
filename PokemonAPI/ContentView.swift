@@ -22,7 +22,12 @@ struct ContentView: View {
                 }
                        , label: {
                     Text("Press Start")
+                        .padding(10)
+                        .font(.largeTitle)
                         .foregroundStyle(Color.black)
+                        .background(Color.white)
+                        .opacity(0.8)
+                        .cornerRadius(10)
                 })
             }
         }
