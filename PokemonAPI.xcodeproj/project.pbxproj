@@ -36,6 +36,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43636E452D2723F800CC94B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7D4884E2D120F4F0063CB5E /* FetchData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43636E462D2723FE00CC94B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7E112B72D2721640078A9AC /* Constants.swift */,
+				C7D488402D120CE50063CB5E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C7D488322D120CE50063CB5E = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +72,9 @@
 		C7D4883D2D120CE50063CB5E /* PokemonAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C7D4884E2D120F4F0063CB5E /* FetchData.swift */,
-				C7E112B72D2721640078A9AC /* Constants.swift */,
 				C7D4883E2D120CE50063CB5E /* PokemonAPIApp.swift */,
-				C7D488402D120CE50063CB5E /* ContentView.swift */,
+				43636E462D2723FE00CC94B5 /* Views */,
+				43636E452D2723F800CC94B5 /* Model */,
 				C7D488422D120CE70063CB5E /* Assets.xcassets */,
 				C7D488442D120CE70063CB5E /* Preview Content */,
 			);
