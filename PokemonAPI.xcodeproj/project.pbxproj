@@ -12,6 +12,7 @@
 		C7D488432D120CE70063CB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D488422D120CE70063CB5E /* Assets.xcassets */; };
 		C7D488462D120CE70063CB5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D488452D120CE70063CB5E /* Preview Assets.xcassets */; };
 		C7D4884F2D120F4F0063CB5E /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4884E2D120F4F0063CB5E /* FetchData.swift */; };
+		C7E112B82D2721650078A9AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E112B72D2721640078A9AC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C7D488422D120CE70063CB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D488452D120CE70063CB5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7D4884E2D120F4F0063CB5E /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		C7E112B72D2721640078A9AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D4884E2D120F4F0063CB5E /* FetchData.swift */,
+				C7E112B72D2721640078A9AC /* Constants.swift */,
 				C7D4883E2D120CE50063CB5E /* PokemonAPIApp.swift */,
 				C7D488402D120CE50063CB5E /* ContentView.swift */,
 				C7D488422D120CE70063CB5E /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				C7D488412D120CE50063CB5E /* ContentView.swift in Sources */,
 				C7D4884F2D120F4F0063CB5E /* FetchData.swift in Sources */,
 				C7D4883F2D120CE50063CB5E /* PokemonAPIApp.swift in Sources */,
+				C7E112B82D2721650078A9AC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

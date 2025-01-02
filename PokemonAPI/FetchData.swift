@@ -22,7 +22,14 @@ struct FetchData {
     }
     
     struct Response: Codable {
-        
-        
+        var id: Int = 0
+        var name:String = "Pikachu"
+        var stats:[Stat] = []
     }
+    
+    struct Stat: Codable {
+        var base_stat:Int?
+        var stat:[String]?
+    }
+    
 }

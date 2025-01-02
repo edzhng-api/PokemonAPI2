@@ -26,7 +26,6 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundStyle(Color.black)
                         .background(Color.white)
-                        .opacity(0.8)
                         .cornerRadius(10)
                 })
             }
