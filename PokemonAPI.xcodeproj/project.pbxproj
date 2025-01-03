@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43636E482D27286000CC94B5 /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43636E472D27286000CC94B5 /* PokemonListView.swift */; };
 		C7D4883F2D120CE50063CB5E /* PokemonAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4883E2D120CE50063CB5E /* PokemonAPIApp.swift */; };
 		C7D488412D120CE50063CB5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D488402D120CE50063CB5E /* ContentView.swift */; };
 		C7D488432D120CE70063CB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D488422D120CE70063CB5E /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43636E472D27286000CC94B5 /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
 		C7D4883B2D120CE50063CB5E /* PokemonAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D4883E2D120CE50063CB5E /* PokemonAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIApp.swift; sourceTree = "<group>"; };
 		C7D488402D120CE50063CB5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			children = (
 				C7E112B72D2721640078A9AC /* Constants.swift */,
 				C7D488402D120CE50063CB5E /* ContentView.swift */,
+				43636E472D27286000CC94B5 /* PokemonListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43636E482D27286000CC94B5 /* PokemonListView.swift in Sources */,
 				C7D488412D120CE50063CB5E /* ContentView.swift in Sources */,
 				C7D4884F2D120F4F0063CB5E /* FetchData.swift in Sources */,
 				C7D4883F2D120CE50063CB5E /* PokemonAPIApp.swift in Sources */,

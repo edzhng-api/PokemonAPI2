@@ -11,7 +11,7 @@ struct FetchData {
     var response: Response = Response()
     
     mutating func getData() async {
-        let URLString = "https://pokeapi.co/api/v2/pokemon/pikachu"
+        let URLString = "https://pokeapi.co/api/v2/pokemon?limit=151"
         
         guard let url = URL(string: URLString) else {return}
         guard let (data, _) = try? await URLSession.shared.data(from: url) else {return}
@@ -20,16 +20,17 @@ struct FetchData {
         
         response = r
     }
-    
-    struct Response: Codable {
-        var id: Int = 0
-        var name:String = "Pikachu"
-        var stats:[Stat] = []
-    }
-    
-    struct Stat: Codable {
-        var base_stat:Int?
-        var stat:[String]?
-    }
-    
+}
+
+struct Response: Codable {
+    var results: [Pokemon] = []
+}
+
+struct Pokemon: Codable {
+    var name: String?
+    var url: URL?
+}
+
+extension Pokemon: Identifiable {
+    var id: String {name ?? " "}
 }
