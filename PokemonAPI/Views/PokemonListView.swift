@@ -14,6 +14,7 @@ struct PokemonListView: View {
             ForEach(data.response.results){ pokemon in
                 VStack{
                     Text(pokemon.name ?? " ")
+                        .font(Constants.textFont)
                 }
                     
             }
