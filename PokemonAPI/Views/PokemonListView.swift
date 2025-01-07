@@ -18,7 +18,14 @@ struct PokemonListView: View {
                 }
                     
             }
+        }.onAppear {
+            Task {
+                await fetchPokemonData()
+            }
         }
+    }
+    private func fetchPokemonData() async {
+            await data.getData()
     }
 }
 
