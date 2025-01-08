@@ -28,7 +28,7 @@ struct Response: Codable {
 
 struct Pokemon: Codable {
     var name: String?
-    var url: URL?
+    var url: String?
 }
 
 extension Pokemon: Identifiable {
