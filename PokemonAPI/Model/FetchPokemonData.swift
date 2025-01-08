@@ -27,6 +27,7 @@ struct PokemonResponse: Codable {
     var weight: Int = 0
     var abilities: [Ability] = []
     var sprites: Sprites = Sprites()
+    var types: [Types] = []
 }
 
 struct Ability: Codable {
@@ -41,3 +42,16 @@ extension Ability: Identifiable {
 struct Sprites: Codable {
     var front_default: String?
 }
+
+struct Types: Codable {
+    var slot: Int
+    var type: TypeDetail
+}
+
+struct TypeDetail: Codable {
+    var name: String?
+    var url: String?
+}
+
+
+
