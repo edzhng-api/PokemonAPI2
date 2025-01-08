@@ -26,6 +26,18 @@ struct PokemonListView: View {
                                 ProgressView()
                             }
                         }
+                        VStack {
+                            Text("\(pokemon.name ?? "")")
+                                .font(Constants.textFont)
+                            ForEach(fetchedData.response.types, id: \.slot) { type in
+                                Text(type.type.name ?? "Unknown Type")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        
+                        
+                        
                     } else {
                         Text("Loading details...")
                             .font(Constants.textFont)
@@ -37,8 +49,9 @@ struct PokemonListView: View {
                             }
                     }
                     
-                    Text("\(pokemon.name ?? "")")
-                        .font(Constants.textFont)
+                    
+                    
+                    
                 }
             }
             .navigationTitle("Pokemon List")
