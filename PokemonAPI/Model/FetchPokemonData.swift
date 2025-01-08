@@ -26,6 +26,7 @@ struct FetchPokemonData {
 struct PokemonResponse: Codable {
     var weight: Int = 0
     var abilities: [Ability] = []
+    var sprites: Sprites = Sprites()
 }
 
 struct Ability: Codable {
@@ -35,4 +36,8 @@ struct Ability: Codable {
 
 extension Ability: Identifiable {
     var id: String {name ?? " "}
+}
+
+struct Sprites: Codable {
+    var front_default: String?
 }
