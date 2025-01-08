@@ -58,7 +58,7 @@ struct PokemonListView: View {
 
         if pokemonData[pokemonName] != nil { return }
         
-        var fetcher = FetchPokemonData(PokemonURL: pokemonURL.absoluteString)
+        var fetcher = FetchPokemonData(PokemonURL: pokemonURL)
         await fetcher.getData()
 
         DispatchQueue.main.async {
