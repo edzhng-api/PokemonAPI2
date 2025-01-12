@@ -45,6 +45,7 @@
 		43636E452D2723F800CC94B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C7E112B72D2721640078A9AC /* Constants.swift */,
 				C7D4884E2D120F4F0063CB5E /* FetchData.swift */,
 				43636E4B2D2DE3EF00CC94B5 /* FetchPokemonData.swift */,
 			);
@@ -55,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				43636E592D342DC600CC94B5 /* PokemonView.swift */,
-				C7E112B72D2721640078A9AC /* Constants.swift */,
 				C7D488402D120CE50063CB5E /* ContentView.swift */,
 				43636E472D27286000CC94B5 /* PokemonListView.swift */,
 			);

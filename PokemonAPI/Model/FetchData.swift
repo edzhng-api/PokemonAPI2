@@ -11,7 +11,7 @@ struct FetchData {
     var response: Response = Response()
     
     mutating func getData() async {
-        let URLString = "https://pokeapi.co/api/v2/pokemon?limit=151"
+        let URLString = "https://pokeapi.co/api/v2/pokemon?limit=1025"
         
         guard let url = URL(string: URLString) else {return}
         guard let (data, _) = try? await URLSession.shared.data(from: url) else {return}

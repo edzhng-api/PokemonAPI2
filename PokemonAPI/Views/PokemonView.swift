@@ -19,7 +19,7 @@ struct PokemonView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.cyan)
+                .foregroundColor(.background)
                 .ignoresSafeArea()
             Rectangle()
                 .frame(width: 350)
@@ -39,19 +39,19 @@ struct PokemonView: View {
                     }
                 } else {
                     Text("No image available")
-                        .font(.caption)
+                        .font(Constants.textFont)
                         .foregroundColor(.gray)
                 }
                 
                 Text(pokemonName.capitalized)
                     .foregroundColor(.white)
-                    .font(.largeTitle)
+                    .font(Constants.textFont)
                     .padding()
                 
                 HStack {
                     Text("Height: \(height)")
                         .foregroundColor(.white)
-                        .font(.title3)
+                        .font(Constants.captionFont)
                         .padding(.horizontal, 30)
                     Spacer()
                 }
@@ -59,7 +59,7 @@ struct PokemonView: View {
                 HStack {
                     Text("Weight: \(weight)")
                         .foregroundColor(.white)
-                        .font(.title3)
+                        .font(Constants.captionFont)
                         .padding(.horizontal, 30)
                     Spacer()
                 }
@@ -67,7 +67,7 @@ struct PokemonView: View {
                 HStack {
                     Text("Types: \(types.joined(separator: ", "))")
                         .foregroundColor(.white)
-                        .font(.title3)
+                        .font(Constants.captionFont)
                         .padding(.horizontal, 30)
                     Spacer()
                 }
@@ -75,7 +75,7 @@ struct PokemonView: View {
                 HStack {
                     Text("Abilities: \(abilities.joined(separator: ", "))")
                         .foregroundColor(.white)
-                        .font(.title3)
+                        .font(Constants.captionFont)
                         .padding(.horizontal, 30)
                     Spacer()
                 }
@@ -91,8 +91,8 @@ struct PokemonView: View {
 #Preview {
     PokemonView(
         pokemonName: "Pikachu",
-        photoURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-        homePhotoURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png",
+        photoURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        homePhotoURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png",
         types: ["Electric"],
         abilities: ["Static", "Lightning Rod"],
         height: 3,
